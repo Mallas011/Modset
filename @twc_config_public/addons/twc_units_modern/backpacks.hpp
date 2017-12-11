@@ -556,6 +556,11 @@
 				name = "ACE_SpottingScope";
 				count = 1;
 			};
+			class _xx_PRC_152
+			{
+				name = "ACRE_PRC152";
+				count = 1;
+			};
 		};
 	};
 //////////////////////////////  COIN  //////////////////////////////	
