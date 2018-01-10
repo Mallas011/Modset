@@ -796,8 +796,9 @@
 
 class Modern_British_crewchief:Modern_British_HeliPilot
 {
-scope=2;
-displayName="GB Helicopter Crew Chief";
+		scope=2;
+		displayName="GB Helicopter Crew Chief";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 };
 
 	class Modern_British_JetPilot: Modern_British_Base
@@ -810,23 +811,25 @@ displayName="GB Helicopter Crew Chief";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
 		nakedUniform="U_BasicBody";
-		uniformClass="U_I_pilotCoveralls";
-		backpack="B_AssaultPack_blk";
+		uniformClass="UK3CB_BAF_U_HeliPilotCoveralls_Army";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{
 			"H_PilotHelmetFighter_B",
+			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR"
+			"ItemcTab"
 		};
 		respawnLinkedItems[]=
 		{
 			"H_PilotHelmetFighter_B",
+			"CUP_V_B_PilotVest",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
-			"ACE_microDAGR"
+			"ItemcTab"
 		};
 		weapons[]=
 		{
@@ -1176,7 +1179,7 @@ displayName="GB Helicopter Crew Chief";
 		displayName="GB Vehicle Commander";
 		icon="iconManLeader";
 		nakedUniform="U_BasicBody";
-		backpack="B_AssaultPack_blk";
+		backpack="TWC_Backpack_Modern_HeloPilot";
 		linkedItems[]=
 		{	
 			"UK3CB_BAF_H_CrewHelmet_ESS_A",
