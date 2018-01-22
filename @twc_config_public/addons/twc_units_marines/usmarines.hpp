@@ -2,7 +2,7 @@ class Modern_USMC_Base: B_Soldier_base_F
 {
 scope=1;
 displayName="Base (Modern)";
-faction="twc_faction";
+faction="twc_public_usmc";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";
@@ -29,6 +29,9 @@ respawnLinkedItems[]=
 Items[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -48,13 +51,14 @@ Items[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
-respawntems[]=
+respawnitems[]=
 {
 "ACE_fieldDressing",
+"ACRE_PRC148",
+"ACE_EarPlugs",
+"rhsusf_ANPVS_14",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
 "ACE_fieldDressing",
@@ -74,9 +78,7 @@ respawntems[]=
 "ACE_epinephrine",
 "ACE_tourniquet",
 "ACE_tourniquet",
-"ACRE_PRC148",
-"ACE_MapTools",
-"ACE_EarPlugs"
+"ACE_MapTools"
 };
 };
 class Modern_USMC_Squadleader: Modern_USMC_Base
@@ -172,6 +174,8 @@ linkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 respawnLinkedItems[]=
@@ -180,6 +184,8 @@ respawnLinkedItems[]=
 "rhsusf_mich_helmet_marpatwd",
 "ItemMap",
 "ItemCompass",
+"ACE_EarPlugs",
+"ACRE_PRC343",
 "ItemWatch"
 };
 weapons[]=
@@ -832,7 +838,7 @@ class Modern_USMC_JetPilot: Modern_USMC_Base
 _generalMacro="Modern_USMCJetPilot";
 scope=2;
 displayName="USMC Fixed Wing Pilot";
-faction="twc_faction";
+faction="twc_public_usmc";
 editorSubcategory = "Men_Modern";
 vehicleClass="Men_Modern";
 icon="iconMan";

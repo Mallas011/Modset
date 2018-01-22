@@ -33,6 +33,7 @@ class CfgFunctions
 			class virtualMortar{};
 			class toggleSpectator {};
 			class grabComposition {};
+			class sendCTabMessage {};
 			
 			class init{};
 		};
@@ -93,6 +94,7 @@ class CfgFunctions
 			class killPlayer {};
 			class setSpectator {};
 			class medicalInfo {};
+			class toggleCon {};
 		};
 
 		class artillery {

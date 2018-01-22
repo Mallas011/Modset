@@ -2,7 +2,7 @@
 	{
 		scope=1;
 		displayName="Base (Modern)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
@@ -30,6 +30,9 @@
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -49,14 +52,15 @@
 			"ACE_epinephrine",
 			"ACE_tourniquet",
 			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_MapTools",
-			"ACE_EarPlugs"
+			"ACE_MapTools"
 		};
-		respawntems[]=
+		respawnitems[]=
 		{
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_packingBandage",
@@ -74,9 +78,7 @@
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 	};
 	class Modern_British_Squadleader: Modern_British_Base
@@ -806,7 +808,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 		_generalMacro="Modern_JetPilot";
 		scope=2;
 		displayName="GB Fixed Wing Pilot (Modern)";
-		faction="twc_faction";
+		faction="twc_public_baf";
 		editorSubcategory = "Men_Modern";
 		vehicleClass="Men_Modern";
 		icon="iconMan";
@@ -948,6 +950,9 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_microDAGR",
@@ -965,15 +970,16 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 
 		respawnItems[]= {
 			"ACE_Kestrel4500",
 			"ACE_ATragMX",
 			"ACE_fieldDressing",
+			"rhsusf_ANPVS_14",
+			"ACE_EarPlugs",
+			"ACRE_PRC343",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
 			"ACE_fieldDressing",
@@ -992,9 +998,7 @@ class Modern_British_crewchief:Modern_British_HeliPilot
 			"ACE_morphine",
 			"ACE_epinephrine",
 			"ACE_tourniquet",
-			"ACE_tourniquet",
-			"ACRE_PRC343",
-			"ACE_EarPlugs"
+			"ACE_tourniquet"
 		};
 
 		weapons[]= {
