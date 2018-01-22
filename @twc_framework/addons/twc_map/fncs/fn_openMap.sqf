@@ -14,14 +14,14 @@ openMap true;
 
 ctrlSetFocus (findDisplay 12 displayCtrl 51);
 
-/* addMissionEventHandler ["Map", {
+addMissionEventHandler ["Map", {
 	params ["_mapIsOpened", "_mapIsForced"];
 	
-	if (!_mapIsOpened && visibleMap) then {
+	if (!_mapIsOpened && !_mapIsForced) then {
 		if (!alreadyOwnsMap) then {
 			player unlinkItem "ItemMap";
 		};
 		
 		removeMissionEventHandler ["Map", _thisEventHandler];
 	};
-}]; */
+}];
