@@ -548,6 +548,7 @@
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -555,11 +556,12 @@
 		"ACE_morphine",
 		"ACE_morphine"
 		};
-		respawntems[]=
+		respawnItems[]=
 		{
 		"ACE_fieldDressing",
 		"ACRE_PRC148",
 		"ACE_EarPlugs",
+		"CUP_NVG_PVS14",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
 		"ACE_fieldDressing",
@@ -593,7 +595,7 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_akm"
 		};
 		respawnweapons[]=
 		{
@@ -644,13 +646,13 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_pm63"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akms"
+		"rhs_weap_pm63"
 		};
 		magazines[]=
 		{
@@ -703,6 +705,7 @@
 		};
 		magazines[]=
 		{
+		"rhs_rpg7_OG7V_mag",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
@@ -715,6 +718,7 @@
 		};
 		Respawnmagazines[]=
 		{
+		"rhs_rpg7_OG7V_mag",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
 		"rhs_30Rnd_762x39mm",
@@ -761,20 +765,20 @@
 		magazines[]=
 		{
 		"rhs_100Rnd_762x54mmR_green",
-		"rhs_100Rnd_762x54mmR_green",
 		"HandGrenade",
-		"SmokeShell"
+		"SmokeShell",
+		"rhs_100Rnd_762x54mmR_green"
 		};
 		Respawnmagazines[]=
 		{
 		"rhs_100Rnd_762x54mmR_green",
-		"rhs_100Rnd_762x54mmR_green",
 		"HandGrenade",
-		"SmokeShell"
+		"SmokeShell",
+		"rhs_100Rnd_762x54mmR_green"
 		};
 	};
 
-		class ana_mg_as: twc_ana_base
+		class twc_ana_mg_as: twc_ana_base
 	{
 		_generalMacro="ana_mg_as";
 		scope=2;
@@ -796,13 +800,13 @@
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akm"
+		"rhs_weap_pm63"
 		};
 		respawnweapons[]=
 		{
 		"Throw",
 		"Put",
-		"rhs_weap_akm"
+		"rhs_weap_pm63"
 		};
 		magazines[]=
 		{
@@ -826,7 +830,7 @@
 		};
 	};
 	
-		class ana_marksman: twc_ana_base
+		class twc_ana_marksman: twc_ana_base
 	{
 		_generalMacro="ana_marksman";
 		scope=2;
