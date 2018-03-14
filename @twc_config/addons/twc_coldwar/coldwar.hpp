@@ -102,12 +102,16 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
 			"CUP_HandGrenade_L109A2_HE",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
@@ -184,12 +188,14 @@
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
+			"ukcw_34_rnd_sterling_mag",
 			"ukcw_l14a1_HEAT",
 			"CUP_HandGrenade_L109A2_HE",
 			"SmokeShell"
 		};
 		Respawnmagazines[]=
 		{
+			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
 			"ukcw_34_rnd_sterling_mag",
@@ -244,13 +250,13 @@
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2"
+			"twc_L7A2"
 		};
 		respawnweapons[]=
 		{
 			"Throw",
 			"Put",	
-			"UK3CB_BAF_L7A2"
+			"twc_L7A2"
 		};
 		magazines[]=
 		{
@@ -335,6 +341,8 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
@@ -357,6 +365,8 @@
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
 			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd",
+			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"UK3CB_BAF_762_20Rnd_T",
 			"CUP_HandGrenade_L109A2_HE",
@@ -464,6 +474,74 @@
 		displayName="Platoon Sergeant";
 		backpack="TWC_Backpack_Cold_War_Platoon_Sergeant";
 	};
+	
+	class ColdWar_ForwardObserver: ColdWar_Platoon_Commander {
+		displayName = "Forward Observer";
+		backpack = "TWC_Backpack_Cold_War_Section";
+		
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+	};
+	
+	class Coldwar_Arty_Commander: ColdWar_Platoon_Commander {
+		displayName = "Artillery Commander";
+		backpack = "TWC_Backpack_Cold_War_Section";
+
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+
+		linkedItems[] = {
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools"
+		};
+
+		respawnLinkedItems[] = {
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools"
+		};
+	};
+
+	class Coldwar_Arty_Crew: Coldwar_Arty_Commander {
+		displayName = "Artillery Crew";
+		backpack = "TWC_Backpack_Cold_War_Arty";
+
+		class EventHandlers: EventHandlers {
+			init = "(_this select 0) setVariable [""twc_keepMap"",true]";
+		};
+
+		linkedItems[] = {
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools"
+		};
+
+		respawnLinkedItems[] = {
+			"Binocular",
+			"ukcw_1958_webbing",
+			"ukcw_helmet_mk3",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ACE_MapTools"
+		};
+	};
+	
 	class ColdWar_CSM: ColdWar_Platoon_Commander
 	{
 		displayName="Company Sergeant Major";

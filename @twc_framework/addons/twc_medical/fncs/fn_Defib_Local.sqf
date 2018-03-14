@@ -25,7 +25,7 @@ _probability = _probability - (30 - (30 * _bloodLoss));
 
 // get for later
 _painLevel = _unit getVariable ["ace_medical_pain", 0];
-_painToAdd = 0.1; // shockingly shocking shocks shockee, ouch
+_painToAdd = 0.25; // shockingly shocking shocks shockee, ouch
 
 _diceRoll = floor(random 100);
 
@@ -46,6 +46,10 @@ if ( _probability >= _diceRoll ) exitWith {
 	if (_target getVariable ["ace_medical_inReviveState", false]) then {
 		_target setVariable ["ace_medical_inReviveState", false, true];
 	};
+
+	_forceSync = (CBA_missionTime - 60);
+	_target setVariable ["ACE_medical_lastMomentValuesSynced", _forceSync, true];
+	[_target] call ACE_medical_fnc_handleUnitVitals;
 
 	[_target, "activity", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
 	[_target, "activity_view", localize "STR_TWC_DEFIB_COMPLETED", [[_caller, false, true] call ace_common_fnc_getName]] call ace_medical_fnc_addToLog;
